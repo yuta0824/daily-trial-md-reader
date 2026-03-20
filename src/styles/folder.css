@@ -1,0 +1,60 @@
+/* Folder navigation styles */
+
+.folder-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Noto Sans JP', 'Verdana', 'Arial', 'Helvetica', sans-serif;
+}
+
+.folder-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #303565;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #303565;
+}
+
+.folder-tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-item {
+  margin: 0;
+  padding: 0;
+}
+
+.folder-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #333;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s;
+}
+
+.folder-link:hover {
+  background-color: #F0F0F0;
+}
+
+.folder-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.folder-name {
+  font-size: 15px;
+}
+
+.is-dir .folder-name {
+  font-weight: 600;
+}
+
+.is-file .folder-link {
+  color: #178CCC;
+}
