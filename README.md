@@ -40,4 +40,4 @@ git clone https://github.com/yuta0824/daily-trial-md-reader.git
 
 ## 対応する独自構文
 
-全構文のサンプルは [tests/sample.md](tests/sample.md) を参照してください。
+全構文のサンプルは [examples/sample.md](examples/sample.md) を参照してください。

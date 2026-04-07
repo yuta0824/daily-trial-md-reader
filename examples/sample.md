@@ -307,6 +307,14 @@ $header-height: 72px;
 
 > Sassを使わなくても、CSS Nestingやカスタムプロパティなど、モダンCSSの標準機能で同様のことができるようになってきています。プロジェクトの要件に合わせて選択しましょう。
 
+### 参考動画
+
+Flexboxの基本を動画で確認しましょう。
+
+<div class="youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## まとめ
