@@ -233,10 +233,10 @@
 
 /* Unordered list checkmark */
 .article-container ul li::before {
-  font-family: "Font Awesome 6 Free", sans-serif;
-  font-size: 12px;
-  font-weight: 900;
-  content: '\f00c';
+  font-size: 11px;
+  font-weight: 700;
+  content: '✓';
+  line-height: 1;
 }
 
 /* Ordered list numbers */
@@ -273,10 +273,10 @@
 .article-container ol ul li::before,
 .article-container ol ol li::before {
   color: #2BBC7F;
-  font-family: "Font Awesome 6 Free", sans-serif;
   background-color: transparent;
-  font-size: 6px;
-  content: '\f111';
+  font-size: 8px;
+  content: '●';
+  line-height: 1;
 }
 
 /* Task list items */
@@ -315,10 +315,9 @@
 }
 
 .article-container .title-box__heading::before {
-  font-family: "Font Awesome 6 Free", sans-serif;
   padding-right: 0.625rem;
   font-weight: 600;
-  content: '\f00c';
+  content: '✓';
 }
 
 .article-container .title-box__content {
@@ -380,13 +379,12 @@
   position: absolute;
   left: -2px;
   top: -0.5rem;
-  content: '\f10d';
+  content: '\201C';
   width: 2.5rem;
   background-color: white;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 900;
-  font-family: "Font Awesome 6 Free", sans-serif;
   color: #6b7280;
 }
 
@@ -394,13 +392,12 @@
   position: absolute;
   right: -2px;
   bottom: -0.5rem;
-  content: '\f10e';
+  content: '\201D';
   width: 2.5rem;
   background-color: white;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 900;
-  font-family: "Font Awesome 6 Free", sans-serif;
   color: #6b7280;
 }
 
@@ -514,9 +511,8 @@
 }
 
 .article-container .code-block__copy::before {
-  font-family: "Font Awesome 6 Free", sans-serif;
-  font-weight: 400;
-  content: '\f0c5';
+  content: '📋';
+  font-size: 12px;
 }
 
 .article-container .code-block__pre {
