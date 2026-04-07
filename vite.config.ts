@@ -8,6 +8,7 @@ function copyManifestPlugin() {
     name: 'copy-manifest',
     closeBundle() {
       copyFileSync('manifest.json', 'dist/manifest.json')
+      copyFileSync('src/popup.html', 'dist/popup.html')
       mkdirSync('dist/icons', { recursive: true })
       // favicon.ico → 128px PNG（macOS sips で変換）
       execSync(
@@ -26,6 +27,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         content: resolve(__dirname, 'src/content.ts'),
+        popup: resolve(__dirname, 'src/popup.ts'),
       },
       output: {
         entryFileNames: '[name].js',

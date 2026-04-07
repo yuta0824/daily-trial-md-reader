@@ -2,17 +2,25 @@ import { preprocessMarkdown } from './preprocess'
 import { renderMarkdown } from './markdown'
 import { processCustomElements } from './custom-elements'
 import { initCodeBlocks } from './code-block'
+import layoutCss from './styles/layout.css?inline'
+import articleCss from './styles/article.css?inline'
+import highlightCss from './styles/highlight.css?inline'
 
-import './styles/layout.css'
-import './styles/article.css'
-import './styles/highlight.css'
-
-function init(): void {
+async function init(): Promise<void> {
   const url = window.location.href
   if (!url.match(/\.(md|markdown)$/i)) return
 
+  // 有効/無効チェック
+  const data = await chrome.storage.local.get('mdReaderEnabled')
+  if (data.mdReaderEnabled === false) return
+
   const rawText = document.body.textContent ?? ''
   if (!rawText.trim()) return
+
+  // CSS を動的に注入（無効時はブラウザデフォルト表示のまま）
+  const style = document.createElement('style')
+  style.textContent = layoutCss + articleCss + highlightCss
+  document.head.appendChild(style)
 
   // 画像の相対パスを解決するための基準URL
   const baseDir = url.substring(0, url.lastIndexOf('/') + 1)

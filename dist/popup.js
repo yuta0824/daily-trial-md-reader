@@ -1,0 +1,1 @@
+const a="mdReaderEnabled";document.addEventListener("DOMContentLoaded",async()=>{const t=document.getElementById("enabled"),c=await chrome.storage.local.get(a);t.checked=c[a]!==!1,t.addEventListener("change",async()=>{await chrome.storage.local.set({[a]:t.checked});const[e]=await chrome.tabs.query({active:!0,currentWindow:!0});e!=null&&e.id&&chrome.tabs.reload(e.id)})});

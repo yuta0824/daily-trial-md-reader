@@ -7,12 +7,17 @@
     {
       "matches": ["file:///*.md", "file:///*.markdown"],
       "js": ["content.js"],
-      "css": ["style.css"],
       "run_at": "document_end"
     }
   ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon-128.png"
+    }
+  },
   "icons": {
     "128": "icons/icon-128.png"
   },
-  "permissions": []
+  "permissions": ["storage", "activeTab"]
 }
