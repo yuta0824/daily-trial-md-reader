@@ -46,6 +46,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    assetsInlineLimit: 300000,
     rollupOptions: {
       input: {
         content: resolve(__dirname, 'src/content.ts'),

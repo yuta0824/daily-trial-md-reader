@@ -8,8 +8,6 @@
   word-break: normal;
   line-break: strict;
   font-size: 14px;
-  font-family: 'Noto Sans JP', 'Verdana', 'Arial', 'Helvetica', sans-serif;
-  line-height: 1.8;
   color: #333;
 }
 
@@ -66,6 +64,40 @@
   .article-container h2 {
     font-size: 24px;
   }
+}
+
+/* H2 TIPS badge + numbering */
+.article-container .h2-tips-badge {
+  display: block;
+  width: max-content;
+  background-color: #303565;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+.article-container .h2-number {
+  font-family: inherit;
+}
+
+.article-container .h2-wrapper {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .article-container .h2-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.article-container .h2-wrapper h2 {
+  margin-top: 0;
 }
 
 .article-container h3 {
