@@ -14,7 +14,7 @@ async function init(): Promise<void> {
   const data = await chrome.storage.local.get('mdReaderEnabled')
   if (data.mdReaderEnabled === false) return
 
-  const rawText = document.body.textContent ?? ''
+  const rawText = document.querySelector('pre')?.textContent ?? document.body.textContent ?? ''
   if (!rawText.trim()) return
 
   // CSS を動的に注入（無効時はブラウザデフォルト表示のまま）
