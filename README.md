@@ -41,3 +41,7 @@ git clone https://github.com/yuta0824/daily-trial-md-reader.git
 ## 対応する独自構文
 
 全構文のサンプルは [examples/sample.md](examples/sample.md) を参照してください。
+
+## 開発者向け
+
+ビルド手順や `src/` のファイル構成は [DEVELOPMENT.md](DEVELOPMENT.md) を参照してください。
